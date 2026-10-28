@@ -226,7 +226,7 @@ export default function SmokeTramStorefront() {
             </div>
             <div className="about-panel__footer gm-panel__footer">
               <span>LEAGUE OF LEGENDS</span>
-              <span>PASSO FUNDO, RS</span>
+              <span>Uma parceria do bonde, Generation Makers</span>
             </div>
           </div>
         </div>
