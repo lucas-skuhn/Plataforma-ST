@@ -56,7 +56,7 @@ export default function SmokeTramStorefront() {
     <main className="smoke-storefront" id="inicio">
       <div className="demo-banner">
         <span className="demo-banner__dot" aria-hidden="true" />
-        Vitrine de demonstração <span className="demo-banner__separator">/</span> perfis e valores ilustrativos
+        Plataforma em evolução <span className="demo-banner__separator">/</span> catálogo, conversão e operação real
       </div>
 
       <header className="site-header">
@@ -73,6 +73,8 @@ export default function SmokeTramStorefront() {
             <a href="#experiencias">Experiências</a>
             <a href="#jerseys">Jersey</a>
             <a href="#sobre">A Smoke Tram</a>
+            <a href="https://generationmakers.gg" target="_blank" rel="noreferrer noopener" aria-label="Generation Makers (abre em nova guia)">Generation Makers</a>
+            <a href="mailto:smoketramesports@gmail.com?subject=Contato%20Smoke%20Tram">Contato</a>
           </nav>
 
           <Button
@@ -98,12 +100,12 @@ export default function SmokeTramStorefront() {
               Performance, saúde mental e cultura gamer — tudo no mesmo lugar. Encontre o apoio certo para evoluir dentro e fora do jogo.
             </p>
             <div className="hero-actions">
-              <a className={buttonVariants({ variant: "default", size: "lg", className: "hero-primary-cta" })} href="#experiencias">
-                Explorar experiências
+              <a className={buttonVariants({ variant: "default", size: "lg", className: "hero-primary-cta" })} href="mailto:smoketramesports@gmail.com?subject=Quero%20agendar%20uma%20experi%C3%AAncia%20Smoke%20Tram">
+                Agendar experiência
                 <ArrowUpRight data-icon="inline-end" aria-hidden="true" />
               </a>
-              <a className="hero-secondary-cta" href="#jerseys">
-                Conhecer a jersey <ArrowDown aria-hidden="true" />
+              <a className="hero-secondary-cta" href="https://generationmakers.gg" target="_blank" rel="noreferrer noopener">
+                Conhecer a Generation Makers <ArrowDown aria-hidden="true" />
               </a>
             </div>
             <div className="hero-copy__signature">
@@ -195,8 +197,8 @@ export default function SmokeTramStorefront() {
             <p>
               Nascida em Passo Fundo/RS, a Smoke Tram é uma organização de esports focada em League of Legends. A comunidade cresce junto com os jogadores — com trabalho, cuidado e vontade de chegar mais longe.
             </p>
-            <a className="about-link" href="https://discord.gg/smoketram" target="_blank" rel="noreferrer">
-              Conheça a comunidade <ArrowUpRight aria-hidden="true" />
+            <a className="about-link" href="https://generationmakers.gg" target="_blank" rel="noreferrer noopener">
+              Conheça a Generation Makers <ArrowUpRight aria-hidden="true" />
             </a>
           </div>
 
@@ -234,9 +236,9 @@ export default function SmokeTramStorefront() {
           <p className="site-footer__slogan">Ninguém para o bonde.</p>
           <div className="site-footer__links" aria-label="Contato e redes sociais">
             <a href="mailto:smoketramesports@gmail.com">E-mail</a>
+            <a href="https://generationmakers.gg" target="_blank" rel="noreferrer noopener">Generation Makers</a>
             <a href="https://www.instagram.com/smoketramesports/" target="_blank" rel="noreferrer">Instagram</a>
             <a href="https://x.com/smoketram" target="_blank" rel="noreferrer">X</a>
-            <a href="https://discord.gg/smoketram" target="_blank" rel="noreferrer">Discord</a>
           </div>
         </div>
         <div className="shell site-footer__bottom">
