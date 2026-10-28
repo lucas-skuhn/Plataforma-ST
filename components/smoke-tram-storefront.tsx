@@ -73,7 +73,7 @@ export default function SmokeTramStorefront() {
             <a href="#experiencias">Experiências</a>
             <a href="#jerseys">Jersey</a>
             <a href="#sobre">A Smoke Tram</a>
-            <a href="https://generationmakers.gg" target="_blank" rel="noreferrer noopener" aria-label="Generation Makers (abre em nova guia)">Generation Makers</a>
+            <a href="https://www.manageresports.com" target="_blank" rel="noreferrer noopener" aria-label="Manager Esports (abre em nova guia)">Manager Esports</a>
             <a href="mailto:smoketramesports@gmail.com?subject=Contato%20Smoke%20Tram">Contato</a>
           </nav>
 
@@ -104,8 +104,8 @@ export default function SmokeTramStorefront() {
                 Agendar experiência
                 <ArrowUpRight data-icon="inline-end" aria-hidden="true" />
               </a>
-              <a className="hero-secondary-cta" href="https://generationmakers.gg" target="_blank" rel="noreferrer noopener">
-                Conhecer a Generation Makers <ArrowDown aria-hidden="true" />
+              <a className="hero-secondary-cta" href="https://www.manageresports.com" target="_blank" rel="noreferrer noopener">
+                Conhecer a Manager Esports <ArrowDown aria-hidden="true" />
               </a>
             </div>
             <div className="hero-copy__signature">
@@ -189,42 +189,34 @@ export default function SmokeTramStorefront() {
 
       <SmokeTramJerseySection onAdd={addToCart} />
 
-      <section className="about-section gm-spotlight" id="sobre" aria-labelledby="about-title">
+      <section className="about-section manager-spotlight" id="sobre" aria-labelledby="about-title">
         <div className="shell about-section__grid">
-          <div className="about-copy gm-copy">
-            <p className="eyebrow gm-eyebrow">QUEM SOMOS</p>
-            <h2 id="about-title">Uma parceria do Bonde.<br /><span>Generation Makers</span></h2>
+          <div className="about-copy manager-copy">
+            <p className="eyebrow manager-eyebrow">QUEM SOMOS</p>
+            <h2 id="about-title">Uma parceria do Bonde.<br /><span>Manager Esports</span></h2>
             <p>
-              A Generation Makers conecta jogadores, estudantes e profissionais de esports a uma rotina de treino estruturada, conteúdo de alto nível e acesso direto a especialistas do cenário competitivo. Além disso, o programa permite que cada aporte vire GM Coins e seja convertido em benefícios reais da GM Shop.
+              A Manager Esports ajuda jogadores, estudantes e organizações a transformar rotina, planejamento e decisões em vantagem competitiva. Com foco em gestão de time, draft, agenda e performance, a plataforma entrega clareza para cada etapa da preparação.
             </p>
-            <a className="about-link gm-link" href="https://generationmakers.gg" target="_blank" rel="noreferrer noopener">
-              Conheça a Generation Makers <ArrowUpRight aria-hidden="true" />
+            <a className="about-link manager-link" href="https://www.manageresports.com" target="_blank" rel="noreferrer noopener">
+              Conheça a Manager Esports <ArrowUpRight aria-hidden="true" />
             </a>
           </div>
 
-          <div className="about-panel gm-panel">
-            <div className="about-panel__headline gm-panel__headline">
-              <span className="about-panel__mark gm-panel__mark" aria-hidden="true">
-                <Image
-                  src="/gm-g-perola-logo.png"
-                  alt="Logo da Generation Makers"
-                  width={40}
-                  height={40}
-                  className="gm-panel__logo"
-                />
-              </span>
+          <div className="about-panel manager-panel">
+            <div className="about-panel__headline manager-panel__headline">
+              <span className="about-panel__mark manager-panel__mark" aria-hidden="true">M</span>
               <div>
-                <p>GENERATION MAKERS</p>
-                <strong>Construída para competir.</strong>
+                <p>MANAGER ESPORTS</p>
+                <strong>Organização para competir.</strong>
               </div>
             </div>
-            <div className="about-panel__stats gm-panel__stats">
-              <div><strong>7 / 7</strong><span>treino constante e rotina</span></div>
-              <div><strong>+1</strong><span>acesso direto a coaches e pro players</span></div>
-              <div><strong>2</strong><span>aulões mensais com especialistas</span></div>
-              <div><strong>10</strong><span>GM Coins por R$ 1 investido</span></div>
+            <div className="about-panel__stats manager-panel__stats">
+              <div><strong>7/7</strong><span>rotina estruturada e consistente</span></div>
+              <div><strong>+1</strong><span>visibilidade para decisões e planejamento</span></div>
+              <div><strong>2x</strong><span>aprimoramento de draft e tática</span></div>
+              <div><strong>24/7</strong><span>acesso ao controle do time e da agenda</span></div>
             </div>
-            <div className="about-panel__footer gm-panel__footer">
+            <div className="about-panel__footer manager-panel__footer">
               <span>LEAGUE OF LEGENDS</span>
             </div>
           </div>
@@ -243,7 +235,7 @@ export default function SmokeTramStorefront() {
           <p className="site-footer__slogan">Ninguém para o bonde.</p>
           <div className="site-footer__links" aria-label="Contato e redes sociais">
             <a href="mailto:smoketramesports@gmail.com">E-mail</a>
-            <a href="https://generationmakers.gg" target="_blank" rel="noreferrer noopener">Generation Makers</a>
+            <a href="https://www.manageresports.com" target="_blank" rel="noreferrer noopener">Manager Esports</a>
             <a href="https://www.instagram.com/smoketramesports/" target="_blank" rel="noreferrer">Instagram</a>
             <a href="https://x.com/smoketram" target="_blank" rel="noreferrer">X</a>
           </div>
