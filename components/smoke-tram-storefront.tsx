@@ -193,7 +193,7 @@ export default function SmokeTramStorefront() {
         <div className="shell about-section__grid">
           <div className="about-copy gm-copy">
             <p className="eyebrow gm-eyebrow">QUEM SOMOS</p>
-            <h2 id="about-title">Uma org.<br /><span>Um bonde inteiro.</span></h2>
+            <h2 id="about-title">Uma parceria do Bonde.<br /><span>Generation Makers</span></h2>
             <p>
               A Generation Makers conecta jogadores, estudantes e profissionais de esports a uma rotina de treino estruturada, conteúdo de alto nível e acesso direto a especialistas do cenário competitivo. Além disso, o programa permite que cada aporte vire GM Coins e seja convertido em benefícios reais da GM Shop.
             </p>
@@ -219,14 +219,13 @@ export default function SmokeTramStorefront() {
               </div>
             </div>
             <div className="about-panel__stats gm-panel__stats">
-              <div><strong>7/7</strong><span>treino constante e rotina</span></div>
+              <div><strong>7 / 7</strong><span>treino constante e rotina</span></div>
               <div><strong>+1</strong><span>acesso direto a coaches e pro players</span></div>
-              <div><strong>2x</strong><span>aulões mensais com especialistas</span></div>
-              <div><strong>10x</strong><span>GM Coins por R$ 1 investido</span></div>
+              <div><strong>2</strong><span>aulões mensais com especialistas</span></div>
+              <div><strong>10</strong><span>GM Coins por R$ 1 investido</span></div>
             </div>
             <div className="about-panel__footer gm-panel__footer">
               <span>LEAGUE OF LEGENDS</span>
-              <span>Uma parceria do bonde, Generation Makers</span>
             </div>
           </div>
         </div>
