@@ -189,34 +189,42 @@ export default function SmokeTramStorefront() {
 
       <SmokeTramJerseySection onAdd={addToCart} />
 
-      <section className="about-section" id="sobre" aria-labelledby="about-title">
+      <section className="about-section gm-spotlight" id="sobre" aria-labelledby="about-title">
         <div className="shell about-section__grid">
-          <div className="about-copy">
-            <p className="eyebrow">QUEM SOMOS</p>
+          <div className="about-copy gm-copy">
+            <p className="eyebrow gm-eyebrow">QUEM SOMOS</p>
             <h2 id="about-title">Uma org.<br /><span>Um bonde inteiro.</span></h2>
             <p>
               A Generation Makers conecta jogadores, estudantes e profissionais de esports a uma rotina de treino estruturada, conteúdo de alto nível e acesso direto a especialistas do cenário competitivo. Além disso, o programa permite que cada aporte vire GM Coins e seja convertido em benefícios reais da GM Shop.
             </p>
-            <a className="about-link" href="https://generationmakers.gg" target="_blank" rel="noreferrer noopener">
+            <a className="about-link gm-link" href="https://generationmakers.gg" target="_blank" rel="noreferrer noopener">
               Conheça a Generation Makers <ArrowUpRight aria-hidden="true" />
             </a>
           </div>
 
-          <div className="about-panel">
-            <div className="about-panel__headline">
-              <span className="about-panel__mark" aria-hidden="true">ST</span>
+          <div className="about-panel gm-panel">
+            <div className="about-panel__headline gm-panel__headline">
+              <span className="about-panel__mark gm-panel__mark" aria-hidden="true">
+                <Image
+                  src="/gm-g-perola-logo.png"
+                  alt="Logo da Generation Makers"
+                  width={40}
+                  height={40}
+                  className="gm-panel__logo"
+                />
+              </span>
               <div>
-                <p>SMOKE TRAM ESPORTS</p>
+                <p>GENERATION MAKERS</p>
                 <strong>Construída para competir.</strong>
               </div>
             </div>
-            <div className="about-panel__stats">
+            <div className="about-panel__stats gm-panel__stats">
               <div><strong>7/7</strong><span>treino constante e rotina</span></div>
               <div><strong>+1</strong><span>acesso direto a coaches e pro players</span></div>
               <div><strong>2x</strong><span>aulões mensais com especialistas</span></div>
               <div><strong>10x</strong><span>GM Coins por R$ 1 investido</span></div>
             </div>
-            <div className="about-panel__footer">
+            <div className="about-panel__footer gm-panel__footer">
               <span>LEAGUE OF LEGENDS</span>
               <span>PASSO FUNDO, RS</span>
             </div>
