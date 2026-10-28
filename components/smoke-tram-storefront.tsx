@@ -97,7 +97,7 @@ export default function SmokeTramStorefront() {
             <p className="eyebrow hero-copy__eyebrow"><span aria-hidden="true" /> O PRÓXIMO LEVEL É SEU</p>
             <h1 id="hero-title">Seu próximo <em>level</em><br />começa no <span>bonde.</span></h1>
             <p className="hero-copy__intro">
-              Performance, saúde mental e cultura gamer — tudo no mesmo lugar. Encontre o apoio certo para evoluir dentro e fora do jogo.
+              Treino todos os dias, com suporte real de coaches e pro players, além de um sistema que transforma dedicação em benefícios e evolução contínua.
             </p>
             <div className="hero-actions">
               <a className={buttonVariants({ variant: "default", size: "lg", className: "hero-primary-cta" })} href="mailto:smoketramesports@gmail.com?subject=Quero%20agendar%20uma%20experi%C3%AAncia%20Smoke%20Tram">
@@ -195,7 +195,7 @@ export default function SmokeTramStorefront() {
             <p className="eyebrow">QUEM SOMOS</p>
             <h2 id="about-title">Uma org.<br /><span>Um bonde inteiro.</span></h2>
             <p>
-              Nascida em Passo Fundo/RS, a Smoke Tram é uma organização de esports focada em League of Legends. A comunidade cresce junto com os jogadores — com trabalho, cuidado e vontade de chegar mais longe.
+              A Generation Makers conecta jogadores, estudantes e profissionais de esports a uma rotina de treino estruturada, conteúdo de alto nível e acesso direto a especialistas do cenário competitivo. Além disso, o programa permite que cada aporte vire GM Coins e seja convertido em benefícios reais da GM Shop.
             </p>
             <a className="about-link" href="https://generationmakers.gg" target="_blank" rel="noreferrer noopener">
               Conheça a Generation Makers <ArrowUpRight aria-hidden="true" />
@@ -211,10 +211,10 @@ export default function SmokeTramStorefront() {
               </div>
             </div>
             <div className="about-panel__stats">
-              <div><strong>4</strong><span>anos de história</span></div>
-              <div><strong>23</strong><span>títulos desde 2022</span></div>
-              <div><strong>3</strong><span>especialistas em cuidado e desenvolvimento</span></div>
-              <div><strong>1</strong><span>meta: chegar ao Tier 1</span></div>
+              <div><strong>7/7</strong><span>treino constante e rotina</span></div>
+              <div><strong>+1</strong><span>acesso direto a coaches e pro players</span></div>
+              <div><strong>2x</strong><span>aulões mensais com especialistas</span></div>
+              <div><strong>10x</strong><span>GM Coins por R$ 1 investido</span></div>
             </div>
             <div className="about-panel__footer">
               <span>LEAGUE OF LEGENDS</span>
