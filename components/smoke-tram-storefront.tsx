@@ -16,26 +16,17 @@ import { SmokeTramCartDialog } from "@/components/smoke-tram-cart-dialog"
 import { SmokeTramExperienceCard } from "@/components/smoke-tram-experience-card"
 import { SmokeTramJerseySection } from "@/components/smoke-tram-jersey-section"
 import { SmokeTramLogo } from "@/components/smoke-tram-logo"
-import {
-  experiences,
-  type CartItem,
-  type ExperienceServiceType,
-} from "@/lib/storefront-data"
-
-const experienceTabs: Array<{ id: ExperienceServiceType; label: string }> = [
-  { id: "geral", label: "Serviços gerais" },
-  { id: "lol", label: "Específicos de LoL" },
-]
+import { experiences, type CartItem } from "@/lib/storefront-data"
 
 export default function SmokeTramStorefront() {
   const [cart, setCart] = useState<CartItem[]>([])
   const [cartOpen, setCartOpen] = useState(false)
   const [announcement, setAnnouncement] = useState("")
-  const [activeExperienceTab, setActiveExperienceTab] = useState<ExperienceServiceType>("geral")
   const itemCount = cart.reduce((total, item) => total + item.quantity, 0)
-  const filteredExperiences = experiences.filter(
-    (experience) => experience.serviceType === activeExperienceTab,
+  const generalExperiences = experiences.filter(
+    (experience) => experience.serviceType === "geral",
   )
+  const lolExperiences = experiences.filter((experience) => experience.serviceType === "lol")
 
   const addToCart = useCallback((newItem: CartItem) => {
     setCart((currentItems) => {
@@ -189,25 +180,35 @@ export default function SmokeTramStorefront() {
           </p>
         </div>
 
-        <div className="experience-tabs" role="tablist" aria-label="Tipos de serviços">
-          {experienceTabs.map((tab) => (
-            <button
-              key={tab.id}
-              type="button"
-              role="tab"
-              aria-selected={activeExperienceTab === tab.id}
-              className={`experience-tab ${activeExperienceTab === tab.id ? "experience-tab--active" : ""}`}
-              onClick={() => setActiveExperienceTab(tab.id)}
-            >
-              {tab.label}
-            </button>
-          ))}
-        </div>
+        <nav className="experience-group-nav" aria-label="Seções de serviços">
+          <a href="#servicos-gerais">Serviços gerais</a>
+          <a href="#servicos-lol">LoL</a>
+        </nav>
 
-        <div className="experience-grid">
-          {filteredExperiences.map((experience) => (
-            <SmokeTramExperienceCard key={experience.id} experience={experience} onAdd={addToCart} />
-          ))}
+        <div className="experience-groups">
+          <section className="experience-group" id="servicos-gerais" aria-labelledby="services-general-title">
+            <div className="experience-group__header">
+              <p className="eyebrow">SERVIÇOS GERAIS</p>
+              <h3 id="services-general-title">Apoio para rotina, saúde e desenvolvimento.</h3>
+            </div>
+            <div className="experience-grid">
+              {generalExperiences.map((experience) => (
+                <SmokeTramExperienceCard key={experience.id} experience={experience} onAdd={addToCart} />
+              ))}
+            </div>
+          </section>
+
+          <section className="experience-group experience-group--lol" id="servicos-lol" aria-labelledby="services-lol-title">
+            <div className="experience-group__header">
+              <p className="eyebrow">LOL</p>
+              <h3 id="services-lol-title">Serviços dedicados ao competitivo de League of Legends.</h3>
+            </div>
+            <div className="experience-grid">
+              {lolExperiences.map((experience) => (
+                <SmokeTramExperienceCard key={experience.id} experience={experience} onAdd={addToCart} />
+              ))}
+            </div>
+          </section>
         </div>
 
         <p className="demo-disclaimer">
