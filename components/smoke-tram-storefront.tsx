@@ -16,13 +16,26 @@ import { SmokeTramCartDialog } from "@/components/smoke-tram-cart-dialog"
 import { SmokeTramExperienceCard } from "@/components/smoke-tram-experience-card"
 import { SmokeTramJerseySection } from "@/components/smoke-tram-jersey-section"
 import { SmokeTramLogo } from "@/components/smoke-tram-logo"
-import { experiences, type CartItem } from "@/lib/storefront-data"
+import {
+  experiences,
+  type CartItem,
+  type ExperienceServiceType,
+} from "@/lib/storefront-data"
+
+const experienceTabs: Array<{ id: ExperienceServiceType; label: string }> = [
+  { id: "geral", label: "Serviços gerais" },
+  { id: "lol", label: "Específicos de LoL" },
+]
 
 export default function SmokeTramStorefront() {
   const [cart, setCart] = useState<CartItem[]>([])
   const [cartOpen, setCartOpen] = useState(false)
   const [announcement, setAnnouncement] = useState("")
+  const [activeExperienceTab, setActiveExperienceTab] = useState<ExperienceServiceType>("geral")
   const itemCount = cart.reduce((total, item) => total + item.quantity, 0)
+  const filteredExperiences = experiences.filter(
+    (experience) => experience.serviceType === activeExperienceTab,
+  )
 
   const addToCart = useCallback((newItem: CartItem) => {
     setCart((currentItems) => {
@@ -176,8 +189,23 @@ export default function SmokeTramStorefront() {
           </p>
         </div>
 
+        <div className="experience-tabs" role="tablist" aria-label="Tipos de serviços">
+          {experienceTabs.map((tab) => (
+            <button
+              key={tab.id}
+              type="button"
+              role="tab"
+              aria-selected={activeExperienceTab === tab.id}
+              className={`experience-tab ${activeExperienceTab === tab.id ? "experience-tab--active" : ""}`}
+              onClick={() => setActiveExperienceTab(tab.id)}
+            >
+              {tab.label}
+            </button>
+          ))}
+        </div>
+
         <div className="experience-grid">
-          {experiences.map((experience) => (
+          {filteredExperiences.map((experience) => (
             <SmokeTramExperienceCard key={experience.id} experience={experience} onAdd={addToCart} />
           ))}
         </div>

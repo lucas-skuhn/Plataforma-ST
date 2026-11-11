@@ -1,7 +1,10 @@
 export type ExperienceId = "coach" | "psychology" | "psychopedagogy" | "ceo-mentorship"
 
+export type ExperienceServiceType = "geral" | "lol"
+
 export type Experience = {
   id: ExperienceId
+  serviceType: ExperienceServiceType
   category: string
   title: string
   profile: string
@@ -24,6 +27,7 @@ export type CartItem = {
 export const experiences: Experience[] = [
   {
     id: "coach",
+    serviceType: "lol",
     category: "Performance",
     title: "Coaching de League of Legends",
     profile: "Perfil profissional demonstrativo",
@@ -36,6 +40,7 @@ export const experiences: Experience[] = [
   },
   {
     id: "psychology",
+    serviceType: "geral",
     category: "Saúde mental",
     title: "Psicologia do esporte",
     profile: "Psicólogo(a) da equipe · perfil demonstrativo",
@@ -48,6 +53,7 @@ export const experiences: Experience[] = [
   },
   {
     id: "psychopedagogy",
+    serviceType: "geral",
     category: "Desenvolvimento",
     title: "Acompanhamento psicopedagógico",
     profile: "Psicopedagogo(a) da equipe · perfil demonstrativo",
@@ -60,6 +66,7 @@ export const experiences: Experience[] = [
   },
   {
     id: "ceo-mentorship",
+    serviceType: "geral",
     category: "Gestão & carreira",
     title: "Mentoria com o CEO",
     profile: "Ramon “Revolker” Espessoto · CEO e proprietário",
